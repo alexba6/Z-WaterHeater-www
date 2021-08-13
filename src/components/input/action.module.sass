@@ -1,0 +1,80 @@
+
+
+.actionContainer
+  display: flex
+  font-family: 'Poppins', sans-serif
+
+.actionEndpointFrame
+  position: relative
+
+.actionBtnFrame
+  button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    padding: 2px
+    svg
+      color: var(--text-color)
+      transition: color .2s ease-in-out
+      font-size: 25px
+    &:hover
+      svg
+        color: var(--site-color)
+
+.actionFrame
+  position: absolute
+  top: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.2)
+  border-radius: 2px
+  margin: 0 8px
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    top: 10px
+    right: 0
+    transform: translateX(100%)
+    z-index: -1
+    width: 3px
+    height: 5px
+    background-color: rgba(0, 0, 0, 0.2)
+
+.simpleActionContainer
+  button
+    width: 100%
+    border: none
+    background-color: transparent
+    cursor: pointer
+
+.simpleActionContentFrame
+  display: flex
+  align-items: center
+  justify-content: start
+  padding: 7px 5px
+  color: var(--text-color)
+  position: relative
+  &::after
+    content: ''
+    top: 0
+    left: 0
+    position: absolute
+    width: 100%
+    height: 100%
+    transition: background-color .1s ease-in-out
+  &:hover
+    &::after
+      background-color: rgba(0, 0, 0, 0.3)
+
+.simpleActionIconFrame
+  width: 30px
+  svg
+    font-size: 18px
+
+.simpleActionNameFrame
+  margin: 0 5px
+  label
+    cursor: pointer
+    font-size: 18px

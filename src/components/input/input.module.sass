@@ -1,0 +1,58 @@
+
+.inputTextContainer
+  font-family: 'Roboto', sans-serif
+  width: 100%
+  user-select: none
+
+.inputTextMask
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 3px
+  background-color: transparent
+  border: solid 1.5px transparent
+  border-radius: 3px
+  transition: border .3s ease-in-out
+  &[focus]
+    border: solid 1.5px var(--site-color)
+  &[error]
+    border: solid 1.5px var(--error-text-color)
+    svg
+      color: var(--error-text-color)
+
+.inputTextInputFrame
+  width: calc(100% - 10px)
+  margin: 0 5px
+  input
+    border: none
+    padding: 5px 0
+    font-size: 18px
+    width: 100%
+    color: var(--text-color)
+    background: transparent
+
+.inputTextReadOnlyFrame
+  width: 100%
+  padding: 15px 0
+  background: transparent
+  font-size: 20px
+  color: var(--text-color)
+
+.inputTextIconFrame
+  width: 40px
+  height: 100%
+  position: relative
+  svg
+    font-size: 18px
+    position: absolute
+    top: 50%
+    left: calc(50%)
+    transform: translate(-50%, -50%)
+    color: var(--text-color)
+
+.errorFrame
+  margin: 5px 0
+  p
+    font-size: 1rem
+    color: var(--error-text-color)
+    font-weight: 500

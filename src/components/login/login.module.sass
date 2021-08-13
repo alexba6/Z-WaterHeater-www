@@ -1,0 +1,47 @@
+// LoginBox
+.loginContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  font-family: Roboto, sans-serif
+  user-select: none
+.loginFrame
+  background-color: var(--second-box-color)
+  margin: 5px
+  padding: 20px
+  border-radius: 2px
+  width: 450px
+.loginHeaderFrame
+  margin: 5px 5px
+  text-align: center
+  color: var(--text-color)
+  font-size: 22px
+.loginContentFrame
+  padding: 15px 0
+  margin-bottom: 20px
+  border-bottom: 1.5px solid var(--third-box-color)
+.loginInputFrame
+  margin: 20px 0
+  background-color: var(--third-box-color)
+  border-radius: 2px
+.loginErrorFrame
+  text-align: center
+  margin: 20px 5px
+  color: var(--error-text-color)
+  font-size: 18px
+.loginFooterFrame
+  margin-top: 30px
+  button
+    cursor: pointer
+    border: solid 1.5px var(--site-color)
+    background-color: var(--site-color)
+    color: var(--text-color)
+    font-size: 22px
+    width: 100%
+    padding: 8px 5px
+    border-radius: 2px
+    transition: .3s ease-in-out
+    &:hover
+      background-color: transparent
+      color: var(--site-color)

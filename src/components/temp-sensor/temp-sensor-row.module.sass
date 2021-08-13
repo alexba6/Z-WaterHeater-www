@@ -1,0 +1,96 @@
+// TempSensorWrapper
+.tempSensorWrapperContainer
+  background-color: var(--third-box-color)
+  border: solid 1.5px var(--third-box-color)
+  margin: 10px
+  padding: 20px 15px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  border-radius: 2px
+  max-width: 300px
+  width: 100%
+  font-family: Roboto, sans-serif
+  transition: .2s ease-in-out
+  &[focus='focus']
+    border-color: var(--site-color)
+.tempSensorWrapperHeaderFrame
+  background-color: var(--second-box-color)
+  width: 100%
+  text-align: center
+  padding: 8px 0
+  border-radius: 2px
+  color: var(--site-color)
+  font-size: 18px
+  h2
+    margin: 0 10px
+.tempSensorWrapperButtonFrame
+  button
+    border: solid 2px var(--site-color)
+    width: 100%
+    padding: 3px 0
+    background-color: var(--site-color)
+    cursor: pointer
+    border-radius: 2px
+    font-size: 22px
+    font-family: Roboto, sans-serif
+    color: var(--text-color)
+    transition: .2s ease-in-out
+    &:hover
+      background-color: transparent
+      color: var(--site-color)
+
+
+// TempSensorView
+.tempSensorViewContainer
+  color: var(--text-color)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+.tempSensorViewContentFrame
+  margin: 20px 10px
+.tempSensorViewItemFrame
+  margin: 10px 0
+  label
+    font-size: 18px
+.tempSensorViewColorCircleCenterLayout
+  display: flex
+  align-items: center
+.tempSensorViewColorCircleMaskFrame
+  margin: 0 10px
+  position: relative
+  width: 30px
+  height: 30px
+  border-radius: 100%
+  background: transparent
+  border: solid 2px
+.tempSensorViewColorCircleFrame
+  position: absolute
+  top: 2.5px
+  left: 2.5px
+  width: 25px
+  height: 25px
+  border-radius: 100%
+
+// TempSensorEdit
+.tempSensorEditContainer
+  margin: 10px 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+.tempSensorEditItemsFrame
+  margin: 5px 0
+.tempSensorEditCheckboxLayout
+  margin: 15px 0
+  display: flex
+  align-items: center
+  color: var(--text-color)
+  font-size: 18px
+.tempSensorEditCheckboxIconFrame
+  margin: 0 15px
+.tempSensorEditCheckboxInputFrame
+  margin: 0 5px
+  input
+    transform: scale(1.2)

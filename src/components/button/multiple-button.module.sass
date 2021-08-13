@@ -1,0 +1,32 @@
+
+
+.multipleBtnContainer
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  user-select: none
+
+.btnContainer
+  button
+    border: none
+    background: transparent
+    cursor: pointer
+
+.btnInfoFrame
+  width: 175px
+  margin: 2px
+  background-color: var(--site-color)
+  border-radius: 1px
+
+.btnInfoFrameMask
+  padding: 10px 20px
+  font-size: 22px
+  color: var(--text-color)
+  transition: .2s ease-in-out
+  &[activity='disable']
+    cursor: default
+    background-color: rgba(0, 0, 0, 0.4)
+  &[activity='able']
+    &:hover
+      background-color: rgba(0, 0, 0, 0.2)

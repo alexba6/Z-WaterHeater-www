@@ -1,0 +1,36 @@
+
+
+.simpleButtonContainer
+  button
+    border: none
+    background: var(--site-color)
+    color: var(--text-color-light)
+    font-weight: 800
+    width: 100%
+    padding: 10px 0
+    font-size: 20px
+    border-radius: 50px
+    cursor: pointer
+    user-select: none
+    transition: opacity .2s ease-in-out
+    &[activity=disable]
+      cursor: default
+      opacity: 0.6
+    &:hover
+      opacity: 0.9
+
+
+.button
+  user-select: none
+  cursor: pointer
+  background-color: var(--site-color)
+  color: var(--text-color)
+  border: solid 2px var(--site-color)
+  padding: 5px 10px
+  border-radius: 2px
+  font-size: 16px
+  transition: .3s ease-in-out
+  &:hover
+    background-color: transparent
+    color: var(--site-color)
+    border: solid 2px var(--site-color)

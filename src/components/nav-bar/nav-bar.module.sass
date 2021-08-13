@@ -1,0 +1,77 @@
+
+.navBarContainer
+  z-index: 1
+  position: fixed
+  top: 81px
+  width: auto
+  background-color: var(--second-box-color)
+  height: 100vh
+  transition: transform .2s ease-in-out
+  user-select: none
+  &[hide]
+    transform: translateX(-100%)
+
+
+.singleLink
+  cursor: pointer
+  display: flex
+  align-items: center
+  min-height: 45px
+  height: 45px
+  margin: 3px 0
+  padding: 0 30px 0 10px
+  color: var(--text-color)
+  transition: .15s ease-in-out
+  &[margin='b']
+    padding-left: 35px
+  &:hover
+    background-color: rgba(0, 0, 0, 0.1)
+    color: var(--site-color)
+
+
+.iconLink
+  width: 35px
+  text-align: center
+  margin-right: 10px
+  svg
+    font-size: 18px
+
+.textLink
+  label
+    font-size: 18px
+    font-family: 'Roboto', sans-serif
+    cursor: pointer
+
+.multipleLinkButtonFrame
+  cursor: pointer
+  display: flex
+  align-items: center
+  height: 40px
+  margin: 3px 0
+  padding: 0 20px 0 10px
+  transition: background-color .15s ease-in-out
+  color: var(--text-color)
+  &:hover
+    background-color: rgba(0, 0, 0, 0.1)
+
+.multipleLinkChevron
+  margin-left: auto
+  svg
+    color: var(--text-color)
+    transition: transform .2s ease-in-out
+  &[open]
+    svg
+      transform: rotate(90deg)
+
+.multipleLinkContent
+  transition: max-height .3s ease-in-out
+  overflow: hidden
+
+.separatorContainer
+  margin: 20px 10px 8px 10px
+  label
+    font-family: 'Roboto', sans-serif
+    font-size: 20px
+    color: var(--site-color)
+    text-transform: uppercase
+    font-weight: 550

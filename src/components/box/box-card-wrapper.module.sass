@@ -1,0 +1,40 @@
+// BoxCardWrapper
+.boxCardWrapperContainer
+  background-color: var(--third-box-color)
+  border: solid 1.5px var(--third-box-color)
+  margin: 10px 0
+  border-radius: 2px
+  transition: border .2s ease-in-out
+  color: var(--text-color)
+  font-family: Roboto, sans-serif
+  display: flex
+  align-items: center
+  &[focus='focus']
+    border: solid 1.5px var(--site-color)
+.boxCardWrapperContentFrame
+  margin: 5px 0
+  padding: 7px 20px
+  border-left: 2px solid var(--second-box-color)
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+.boxCardWrapperChildrenFrame
+  width: 100%
+.boxCardWrapperIconFrame
+  margin: 0 20px
+  svg
+    font-size: 25px
+.boxCardWrapperButtonFrame
+  margin: 0 20px
+@media only screen and (max-width: 675px)
+  .boxCardWrapperContentFrame
+    flex-direction: column
+    justify-content: center
+    align-items: start
+  .boxCardWrapperButtonFrame
+    margin: 20px auto
+    text-align: right
+    width: 100%
+    button
+      width: 100%

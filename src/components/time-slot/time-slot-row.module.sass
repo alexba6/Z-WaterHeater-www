@@ -1,0 +1,83 @@
+// TimeSlotEditInputFrame
+.rowEditContainer
+  user-select: none
+  display: flex
+  align-items: center
+  margin: 10px
+  font-family: 'Roboto', sans-serif
+  color: var(--text-color)
+  font-size: 20px
+.rowEditFrame
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 15px
+  padding: 10px
+  border-radius: 2px
+  background-color: var(--second-box-color)
+.rowEditLabelFrame
+  margin: 0 10px
+.rowEditInputFrame
+  margin: 0 5px
+  border: solid 1px var(--third-box-color)
+  border-radius: 2px
+.rowEditTimeButton
+  background: transparent
+  color: var(--text-color)
+  border: solid 1.5px var(--second-box-color)
+  border-radius: 2px
+  padding: 2px
+  transition: .3s ease-in-out
+  &:focus
+    border-color: var(--site-color)
+.rowEditGroupSelect
+  color: var(--text-color)
+  background-color: transparent
+  border: solid 1.5px var(--second-box-color)
+  border-radius: 2px
+  padding: 2px
+  transition: .3s ease-in-out
+  &:focus
+    border-color: var(--site-color)
+  option
+    background-color: var(--second-box-color)
+@media only screen and (max-width: 960px)
+  .rowEditContainer
+    display: block
+  .rowEditFrame
+    margin: 10px 0
+@media only screen and (max-width: 440px)
+  .rowEditFrame
+    padding: 10px 2px
+
+
+// TimeSlotView
+.rowViewContainer
+  user-select: none
+  display: flex
+  align-items: center
+  font-size: 20px
+  font-family: 'Roboto', sans-serif
+  color: var(--text-color)
+  width: 100%
+.rowViewGroupNameFrame
+  margin: 0 8px
+  padding: 5px 12px
+  background-color: var(--second-box-color)
+  border-radius: 2px
+.rowViewStartEndFrame
+  margin: 0 8px
+.rowEditDeleteButtonFrame
+  margin-left: auto
+@media only screen and (max-width: 675px)
+  .rowViewContainer
+    flex-direction: column
+    align-items: start
+    justify-content: center
+  .rowViewGroupNameFrame, .rowViewStartEndFrame
+    margin: 4px 2px
+  .rowEditDeleteButtonFrame
+    margin: 15px 0
+    width: 100%
+    button
+      width: 100%
